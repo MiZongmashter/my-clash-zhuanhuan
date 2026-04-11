@@ -249,6 +249,19 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🚀 手动切换
+  - name: 🖌️ Autodesk
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
   - name: 🎶 网易音乐
     type: select
     include-all: true
@@ -447,6 +460,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  Autodesk:
+    url: https://raw.githubusercontent.com/MiZongmashter/Autodesk_rule/refs/heads/main/Autodesk.list
+    path: ./ruleset/Autodesk.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   Steam:
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
     path: ./ruleset/Steam.list
@@ -594,6 +614,7 @@ rules:
   - "RULE-SET,Sony,🎮 游戏平台"
   - "RULE-SET,Steam,🎮 游戏平台"
   - "RULE-SET,Nintendo,🎮 游戏平台"
+  - "RULE-SET,Autodesk,🖌️ Autodesk"
   - "RULE-SET,YouTube,📹 油管视频"
   - "RULE-SET,Netflix,🎥 奈飞视频"
   - "RULE-SET,Disney+,🐭 Disney+"
