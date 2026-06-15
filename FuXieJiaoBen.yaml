@@ -607,10 +607,18 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  NOProxy:
+    url: https://raw.githubusercontent.com/MiZongmashter/NOProxy/refs/heads/main/NOProxy.list
+    path: ./ruleset/NOProxy.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
 
 rules:
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
   - "RULE-SET,UnBan,🎯 全球直连"
+  - "RULE-SET,NOProxy,🎯 全球直连"
   - "RULE-SET,BanAD,🛑 广告拦截"
   - "RULE-SET,BanProgramAD,🍃 应用净化"
   - "RULE-SET,GoogleFCM,📢 谷歌FCM"
