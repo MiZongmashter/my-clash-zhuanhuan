@@ -475,7 +475,7 @@ rule-providers:
     format: text
     type: http
   Autodesk:
-    url: https://raw.githubusercontent.com/MiZongmashter/Autodesk_rule/refs/heads/main/Autodesk.list
+    url: https://raw.githubusercontent.com/MiZongmashter/Ruleset/refs/heads/main/Ruleset/Autodesk.list
     path: ./ruleset/Autodesk.list
     behavior: classical
     interval: 86400
@@ -608,7 +608,7 @@ rule-providers:
     format: text
     type: http
   NOProxy:
-    url: https://raw.githubusercontent.com/MiZongmashter/NOProxy/refs/heads/main/NOProxy.list
+    url: https://raw.githubusercontent.com/MiZongmashter/Ruleset/refs/heads/main/Ruleset/NOProxy.list
     path: ./ruleset/NOProxy.list
     behavior: classical
     interval: 86400
