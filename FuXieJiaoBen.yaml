@@ -615,14 +615,14 @@ rule-providers:
   ChinaDomain:
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
     path: ./ruleset/ChinaDomain.list
-    behavior: domain
+    behavior: classical
     interval: 86400
     format: text
     type: http
   ChinaCompanyIp:
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
     path: ./ruleset/ChinaCompanyIp.list
-    behavior: ipcidr
+    behavior: classical
     interval: 86400
     format: text
     type: http
@@ -652,6 +652,7 @@ rules:
   - "RULE-SET,Bing,Ⓜ️ 微软Bing"
   - "RULE-SET,OneDrive,Ⓜ️ 微软云盘"
   - "RULE-SET,Microsoft,Ⓜ️ 微软服务"
+  - "RULE-SET,AppleTV,🍎 AppleTV"
   - "RULE-SET,Apple,🍎 苹果服务"
   - "RULE-SET,Telegram,📲 电报消息"
   - "RULE-SET,OpenAi,💬 OpenAi"
@@ -667,7 +668,6 @@ rules:
   - "RULE-SET,Netflix,🎥 奈飞视频"
   - "RULE-SET,Disney+,🐭 Disney+"
   - "RULE-SET,Spotify,🎵 Spotify"
-  - "RULE-SET,AppleTV,🍎 AppleTV"
   - "RULE-SET,AmazonPrimeVideo,📺 AmazonPrimeVideo"
   - "RULE-SET,TikTok,🎵 TikTok"
   - "RULE-SET,Bahamut,📺 巴哈姆特"
